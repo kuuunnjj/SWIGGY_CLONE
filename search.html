@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Order Food online from india's biggest..</title>
+    <link rel="icon" href="logo.png">
+
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap css -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- css -->
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <!-- fonts -->
+
+    <!-- remix icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- remix icon -->
+  </head>
+  <style>
+    .iiw::placeholder{
+        color: rgb(190, 190, 190);
+    }
+  </style>
+  <body>
+
+     <!-- section1 -->
+     <div class="section1 row m-0 p-0 px-5">
+        <div class="sb1 col-6 d-flex align-items-center">
+          <img src="logo.png" class="d-block d-md-none l2"/>
+          <img src="logo.png" class="d-none d-md-block l3"/>
+          <h1>Mavdi</h1>
+          <p class="d-none d-lg-block">Jasraj Nagar, Mavdi, Rajkot, Gujrat 3...</p>
+
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+            style="background-color: rgb(14, 14, 14); color: white"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title"
+                id="offcanvasExampleLabel"
+                style="color: rgb(252, 128, 25)"
+              >
+                SWIGGY
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+               style="background-color: white;"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div style="font-size: 14px; color: rgb(190, 190, 190)">
+                <h1>How many orders Swiggy per day?</h1>
+                <br />
+                Swiggy reported an average of 1.4 million orders in a day in
+                2019. The Bangalore-based food delivery company was one of the
+                leading companies for the market in terms of revenue. Zomato,
+                the other major market player for food delivery in India
+                recorded 1.3 million that same year.
+              </div>
+            </div>
+          </div>
+
+          <i
+            class="ri-arrow-down-s-line"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          ></i>
+          
+        </div>
+        <div class="sb2 col-6 d-flex align-items-center justify-content-end">
+          <a href="home.html" class="d-none d-lg-block" > <i class="ri-refund-2-fill"></i> Offers</a>
+
+          <a href="search.html" class="d-none d-lg-block" id="linea"><i class="ri-search-line"></i>Search</a>
+
+          <a href="help.html" class="d-none d-lg-block"> <i class="ri-question-line"></i>Help</a>
+
+          <a href="contact.html" class="d-none d-lg-block"> <i class="ri-map-pin-user-line"></i>Sign In</a>
+
+          <a href="cart.html" class="d-none d-lg-block" id="mn">
+            <i class="ri-shopping-cart-2-line" id="cart"></i>Cart</a
+          >
+
+          <i class="ri-menu-line d-block d-lg-none" id="ham"></i>
+        </div>
+      </div>
+      <!-- section1 -->
+
+
+       <!-- mobile-menu -->
+       <div class="menu row mt-3" id="menushow">
+
+        <div class="col-12 d-flex flex-column align-items-center">
+            <a href="home.html" class="d-block d-lg-none"> <i class="ri-search-line"></i>Search</a>
+
+            <a href="search.html" class="d-block d-lg-none"> <i class="ri-refund-2-fill"></i>Offers</a>
+    
+            <a href="help.html" class="d-block d-lg-none"> <i class="ri-question-line"></i>Help</a>
+    
+            <a href="contact.html" class="d-block d-lg-none"> <i class="ri-map-pin-user-line"></i>Sign In</a>
+    
+            <a href="cart.html" class="d-block d-lg-none" id="mn">
+              <i class="ri-shopping-cart-2-line" id="cart"></i>Cart</a
+            >
+        </div>
+       
+
+      </div>
+      <!-- mobile-menu -->
+
+
+      <!-- searchbar -->
+      <div class="row g-3" style="margin-inline: 50px; margin-top: 30px;">
+        <div class="col-sm-7">
+          <input type="text" class="form-control iiw " placeholder="Search Your City" aria-label="City" style="background-color: rgba(255, 255, 255, 0.079); border: 1px solid rgb(252, 128, 25); ">
+        </div>
+        <div class="col-sm">
+          <input type="text" class="form-control iiw" placeholder="State" aria-label="State" style="background-color: rgba(255, 255, 255, 0.079); border: 1px solid rgb(252, 128, 25); ">
+        </div>
+        <div class="col-sm">
+          <input type="text" class="form-control iiw" placeholder="Zip" aria-label="Zip" style="background-color: rgba(255, 255, 255, 0.079); border: 1px solid rgb(252, 128, 25); ">
+        </div>
+      </div>
+      <!-- searchbar -->
+
+      <!-- section2 -->
+      <div class="section2 row mx-0  d-flex justify-content-between">
+        <!-- <div class="col-12 sbox21">
+          <h1>MEGASAVER</h1>
+          <button class="d-none d-md-inline-block">Filter <i class="ri-filter-2-line"></i></button>
+          <button class="d-none d-md-inline-block">Sort By <i class="ri-arrow-down-s-line" ></i></button>
+        </div> -->
+       
+        <div class="row d-flex justify-content-between">
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1">
+                <h1>&#8377 125 OFF ABOVE &#8377 249</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PAUBHAJI-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m15">
+                <h1>&#8377 60 OFF ABOVE &#8377 149</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PANJABI -Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>4.5 . 20 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m16">
+                <h1>&#8377 100 OFF ABOVE &#8377 249</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PIZZA-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">Italian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m18">
+                <h1>&#8377 75 OFF ABOVE &#8377 199</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>FRIES-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m11">
+                <h1>&#8377 50 OFF ABOVE &#8377 99</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PIZZA-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m12">
+                <h1>&#8377 125 OFF ABOVE &#8377 249</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PANJABI-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m13">
+                <h1>&#8377 60 OFF ABOVE &#8377 149</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PIZZA-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">Italian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m17">
+                <h1>&#8377 125 OFF ABOVE &#8377 249</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PAUBHAJI-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m19">
+                <h1>&#8377 125 OFF ABOVE &#8377 249</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PAUBHAJI-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m20">
+                <h1>&#8377 60 OFF ABOVE &#8377 149</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PANJABI -Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>4.5 . 20 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m21">
+                <h1>&#8377 100 OFF ABOVE &#8377 249</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PIZZA-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">Italian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m22">
+                <h1>&#8377 75 OFF ABOVE &#8377 199</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>FRIES-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m23">
+                <h1>&#8377 50 OFF ABOVE &#8377 99</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PIZZA-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m24">
+                <h1>&#8377 125 OFF ABOVE &#8377 249</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PANJABI-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m25">
+                <h1>&#8377 60 OFF ABOVE &#8377 149</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PIZZA-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">Italian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m26">
+                <h1>&#8377 125 OFF ABOVE &#8377 249</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PAUBHAJI-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1">
+                <h1>&#8377 125 OFF ABOVE &#8377 249</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PAUBHAJI-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m15">
+                <h1>&#8377 60 OFF ABOVE &#8377 149</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PANJABI -Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>4.5 . 20 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m16">
+                <h1>&#8377 100 OFF ABOVE &#8377 249</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PIZZA-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">Italian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m18">
+                <h1>&#8377 75 OFF ABOVE &#8377 199</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>FRIES-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m11">
+                <h1>&#8377 50 OFF ABOVE &#8377 99</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PIZZA-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m12">
+                <h1>&#8377 125 OFF ABOVE &#8377 249</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PANJABI-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m13">
+                <h1>&#8377 60 OFF ABOVE &#8377 149</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PIZZA-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">Italian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m17">
+                <h1>&#8377 125 OFF ABOVE &#8377 249</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PAUBHAJI-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m19">
+                <h1>&#8377 125 OFF ABOVE &#8377 249</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PAUBHAJI-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m20">
+                <h1>&#8377 60 OFF ABOVE &#8377 149</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PANJABI -Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>4.5 . 20 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m21">
+                <h1>&#8377 100 OFF ABOVE &#8377 249</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PIZZA-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">Italian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m22">
+                <h1>&#8377 75 OFF ABOVE &#8377 199</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>FRIES-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m23">
+                <h1>&#8377 50 OFF ABOVE &#8377 99</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PIZZA-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m24">
+                <h1>&#8377 125 OFF ABOVE &#8377 249</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PANJABI-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m25">
+                <h1>&#8377 60 OFF ABOVE &#8377 149</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PIZZA-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">Italian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 menu1">
+          <div class="row">
+              <div class="col-12 m1 m26">
+                <h1>&#8377 125 OFF ABOVE &#8377 249</h1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 m2">
+              <h1>PAUBHAJI-Bole Toh Ek...</h1>
+              <i class="ri-star-s-fill"></i><span>3.9 . 16 mins</span>
+              <p style="margin-top: 1vw;">South Indian, Fast Food, Snacks...</p>
+              <p>Nana Mava road</p>
+            </div>
+          </div>
+
+        </div>
+
+       
+       
+       
+
+        
+   
+
+      
+        
+        
+      </div>
+        
+
+       
+      </div>
+      <!-- section2 -->
+
+
+      <!-- section3 -->
+      <div class="section3 row mx-5">
+        <div class="col-12">
+          <div class="row d-flex justify-content-center">
+            <div class="col-6 col-md-2">
+              <img src="f1.jpg">
+              <p>© 2023 Bundl <br> Technologies Pvt. Ltd</p>
+            </div>
+            <div class="col-6 col-md-2">
+              <h2>Company</h2>
+              <a href="#">About</a>
+              <a href="#">Careers</a>
+              <a href="#">Team</a>
+              <a href="#">Swiggy One</a>
+              <a href="#">Swiggy Instamart</a>
+              <a href="#">Swiggy Genie</a>
+            </div>
+            <div class="col-6 col-md-2 d-none d-md-block">
+              <h2>Contact us</h2>
+              <a href="#">Help & Support</a>
+              <a href="#">Partner with us</a>
+              <a href="#">Ride with us</a>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Cookie Policy</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+            <div class="col-6 col-md-2 d-none d-md-block">
+              <h2>We deliver to:</h2>
+              <a href="#">Banglore</a>
+              <a href="#">Gurgoun</a>
+              <a href="#">Hyderabad</a>
+              <a href="#">Delhi</a>
+              <a href="#">Mumbai</a>
+              <a href="#">Pune</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section3 -->
+
+
+      <!-- section4 -->
+      <div class="section4 row mx-0">
+        <div class="col-12 footer2 d-flex justify-content-between">
+          <p>Copyright ©2023 All rights reserved | This template is made by KUNJ PATEL</p>
+          <p class="d-none d-md-block">
+            <i class="ri-instagram-line"></i>
+            <i class="ri-snapchat-line"></i>
+            <i class="ri-pinterest-line"></i>
+            <i class="ri-twitter-line"></i>
+          </p>
+        </div>
+      </div>
+      <!-- section4 -->
+     
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap js -->
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- jquery -->
+
+    <!-- js -->
+    <script>
+        $(document).ready(function(){
+            $("#ham").click(function(){
+                $("#menushow").fadeToggle(100);
+            })
+        });
+    </script>
+    <!-- js -->
+  
+  </body>
+</html>

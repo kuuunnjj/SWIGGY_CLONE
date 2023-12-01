@@ -1,0 +1,389 @@
+/* var */
+:root{
+    --bg-color: black;
+    --color-1: rgb(255, 255, 255);
+    --color-2: rgb(252,128,25);
+    --color-3: rgb(23,139,62);
+    --color-4: rgb(190, 190, 190);
+}
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+/* var */
+
+
+/* body */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+}
+/* body */
+
+
+/* section1 */
+.section1{
+    height: 90px;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
+    box-shadow: 0px 10px 40px -27px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 0px 10px 40px -27px rgba(255,255,255,0.75);
+    -moz-box-shadow: 0px 10px 40px -27px rgba(255,255,255,0.75);
+}
+.section1 .sb1 .l3{
+    width: 40px;
+    margin-right: 3vw;
+}
+.l2{
+    width: 30px;
+    margin-right: 3vw;
+}
+.section1 .sb1 h1{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-1);
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+}
+ #ham{
+    font-size: 30px;
+    margin-top: 16px;
+}
+.section1 .sb1 h1::first-letter{
+    font-size: 17px;
+}
+.section1 .sb1 p{
+    font-size: 12px;
+    color: var(--color-4);
+    margin-left: 10px;
+    font-weight: 500;
+}
+.section1 .sb1 i{
+    color: var(--color-1);
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.section1 .sb2 i{
+    font-size: 15px;
+    color: var(--color-4);
+    font-weight: 500;
+    margin-right: 0.5vw;
+    margin-bottom: 20px;
+}
+
+.section1 .sb2 #cart{
+    color: var(--color-3);
+    font-weight: 600;
+}
+.section1 .sb2 a{
+    font-size: 15px;
+    color: var(--color-4);
+    font-weight: 500;
+    margin-right: 2vw;
+    text-decoration: none;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+#linea::before{
+    width: 100%;
+    left: 0%;
+    right: 0%;
+}
+#linea{
+    color: var(--color-2);
+}
+#linea i{
+    color: var(--color-2);
+}
+.section1 .sb2 a::before{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--color-2);
+    top: 2.5vw;
+    left: 50%;
+    right: 50%;
+    transition: 0.2s;
+    /* border-radius: 2px; */
+}
+.section1 .sb2 a:hover::before{
+    left: 0%;
+    right: 0%;
+    transition: 0.2s;
+    width: 100%;
+}
+.section1 .sb2 a:hover{
+    color: var(--color-2);
+    transition: 0.5s;
+}
+.section1 .sb2 a:hover i{
+    color: var(--color-2);
+    transition: 0.5s;
+}
+.section1 .sb2 #mn{
+    margin-right: 0vw;
+}
+
+
+.menu{
+    display: none;
+    padding-block: 100px;
+}
+.menu i{
+    font-size: 15px;
+    color: var(--color-4);
+    font-weight: 500;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.menu #cart{
+    color: var(--color-3);
+    font-weight: 600;
+}
+.menu a{
+    font-size: 20px;
+    color: var(--color-4);
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 30px;
+    width: 130px;
+}
+.menu a i{
+    font-size: 20px;
+}
+.menu a:hover{
+    color: var(--color-2);
+    transition: 0.5s;
+}
+.menu a:hover i{
+    color: var(--color-2);
+    transition: 0.5s;
+}
+.menu #mn{
+    margin-right: 0vw;
+}
+
+/* section1 */
+
+/* section2 */
+.section2{
+    margin-top: 3vw;
+    padding-inline: 60px;
+}
+.section2 .sbox21 h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+.section2 .sbox21 h1::first-letter{
+    color: var(--color-2);
+    font-size: 65px;
+}
+.section2 .sbox21 button{
+    width: 8vw;
+    height: 3vw;
+    border-radius: 5vw;
+    font-size: 1vw;
+    border: 1.5px solid var(--color-2);
+    background-color: transparent;
+    color: white;
+    margin-right: 0.5vw;
+    background-color: transparent;
+    margin-top: 1vw;
+}
+.section2 .menu1{
+    margin-top: 30px;
+    padding-left: 30px;
+}
+.section2 .m1{
+    background: url(b9.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: -2px -152px 57px -82px rgba(0,0,0,0.81) inset;
+    -webkit-box-shadow: -2px -152px 57px -82px rgba(0,0,0,0.81) inset;
+    -moz-box-shadow: -2px -152px 57px -82px rgba(0,0,0,0.81) inset;
+}
+.section2 .m1 h1{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 900;
+    font-family: 'Acme', sans-serif;
+    font-style: italic;
+    letter-spacing: 0px;
+
+}
+.section2 .m2{
+    margin-top: 18px;
+}
+.section2 .m2 h1{
+    color: var(--color-1);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 0px;
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+.section2 .m2 i{
+    color: var(--color-3);
+    font-size: 18px;
+    color: var(--color-3);
+    border-radius: 50%;
+   
+}
+.section2 .m2 span{
+    color: var(--color-1);
+    margin-left: 0.5vw;
+    font-size: 14px;
+}
+.section2 .m2 p{
+    color: var(--color-4);
+    font-size: 14px;
+    line-height: 2px;
+    font-weight: 300;
+}
+
+.section2 .m11{
+    background: url(b7.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.section2 .m12{
+    background: url(b10.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.section2 .m13{
+    background: url(b6.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.section2 .m14{
+    background: url(b5.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.section2 .m15{
+    background: url(b4.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.section2 .m16{
+    background: url(b3.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.section2 .m17{
+    background: url(b2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.section2 .m18{
+    background: url(b22.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.section2 .m19{
+    background: url(b11.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.section2 .m20{
+    background: url(b12.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.section2 .m21{
+    background: url(b13.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.section2 .m22{
+    background: url(b14.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.section2 .m23{
+    background: url(b15.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.section2 .m24{
+    background: url(b16.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.section2 .m25{
+    background: url(b17.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.section2 .m26{
+    background: url(b18.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+/* section2 */
+
+
+/* section3 */
+.section3{
+    margin-top: 13vw;
+    margin-bottom: 3vw;
+    padding-block: 5vw;
+    border-top: 1px solid var(--color-4);
+    border-bottom: 1px solid var(--color-4);
+}
+.section3 img{
+    width: 120px;
+    margin-bottom: 20px;
+}
+.section3 p{
+    font-size: 12px;
+    color: var(--color-4);
+}
+.section3 h2{
+    font-size: 20px;
+    color: var(--color-1);
+    margin-bottom: 20px;
+}
+.section3 a{
+    font-size: 14px;
+    color: var(--color-4);
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.section3 a:hover{
+    text-decoration: underline;
+}
+/* section3 */
+
+
+/* section4 */
+.section4{
+    padding-inline: 35px;
+}
+.section4 p{
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-4);
+}
+.section4 p i{
+    font-size: 20px;
+    color: var(--color-4);
+    margin-left: 10px;
+    cursor: pointer;
+}
+/* section4 */
